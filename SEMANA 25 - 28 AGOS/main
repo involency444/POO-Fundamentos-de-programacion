@@ -1,0 +1,24 @@
+
+
+public class Empleado {
+
+    public static void main(String[] args) {
+        Empleado0 empleado1 = new Empleado0();
+    empleado1.setNombre("Santiago");
+    empleado1.setCargo("Gerente");
+    empleado1.setSalarioBase(5000000);
+    empleado1.setAnosExperiencia(5);
+        System.out.println("Nombre: " + empleado1.getNombre() + "\nCargo: " + empleado1.getCargo() + "\nEl salario es: "  + empleado1.getSalarioBase() + "\nLos años de experiencia son: " + empleado1.getAnosExperiencia());
+        System.out.println(empleado1.verDetalle());
+        System.out.println(empleado1.trabajar(3));
+        System.out.println(empleado1.tomarDescanso());
+        System.out.println(empleado1.trabajarYdescansar(3));
+        System.out.println(empleado1.calcularBono(100));
+        System.out.println(empleado1.calcularBono(0));
+        System.out.println(empleado1.calcularSalario(270, 7));
+     
+    
+    
+        
+    }
+}
