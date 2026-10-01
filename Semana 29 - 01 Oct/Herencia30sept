@@ -1,0 +1,41 @@
+package herencia30Sept;
+
+
+public class Animal {
+    private String especie;
+
+    public Animal() {
+    }
+
+    public String getEspecie() {
+        return especie;
+    }
+
+    public void setEspecie(String especie) {
+        this.especie = especie;
+    }
+public void comer(){
+    System.out.println("El animal de especie: " + this.especie + "Come todos los dias");
+}
+public void dormir(){
+    System.out.println("El animal de especie: " + this.especie + "Duerme todos los dias");
+}
+public class Perro extends Animal{
+    private String raza;
+
+        public Perro() {
+        }
+
+        public String getRaza() {
+            return raza;
+        }
+
+        public void setRaza(String raza) {
+            this.raza = raza;
+        }
+    public void hacerSonido(){
+        System.out.println("El perro hace woof: ");
+    }
+    
+}
+}    
