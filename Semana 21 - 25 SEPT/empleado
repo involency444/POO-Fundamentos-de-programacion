@@ -1,0 +1,51 @@
+package retroalimentacionparcial1;
+
+
+public class Empleado {
+    private String nombre;
+    private String cargo;
+    private double salarioBase;
+    private int anosExperiencia;
+    
+    public Empleado () {
+    }
+
+    public Empleado(String nombre, String cargo, double salarioBase, int anosExperiencia) {
+    this.nombre = nombre;
+    this.cargo = cargo;
+    this.salarioBase = salarioBase;
+    this.anosExperiencia = anosExperiencia;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public double getSalarioBase() {
+        return salarioBase;
+    }
+
+    public int getAnosExperiencia() {
+        return anosExperiencia;
+    }
+    
+    public String verDetalle(){
+        return "El empleado se llama: " + this.nombre +
+        "\n El cargo del empleado es: " + this.cargo +
+        "\n El salario del empleado es: " + this.salarioBase +
+        "\n El salario tiene: " + this.anosExperiencia;
+    }
+    public String trabajar(int horas) {
+        return "El empleado llamado: " + this.nombre + "trabaja" + horas + " a la semana";
+    }
+    public String tomarDescanso() {
+        return "El empleado llamado: " + this.nombre + "descansa 1 hora al dia";
+    }
+    public String trabajarYDescansar(int horas){
+        return this.trabajar(horas) + this.tomarDescanso();
+    }
+}
