@@ -1,0 +1,40 @@
+package animal;
+
+
+public class herencia30sept {
+
+    
+    public static void main(String[] args) {
+        Animal animal1 = new Animal();
+        animal1.setEspecie("Mamifero");
+        System.out.println(animal1.getEspecie());
+        animal1.comer();
+        animal1.dormir();
+        Perro perro1 = new Perro();
+        perro1.setEspecie("Mamifero");
+        perro1.setRaza("Pitbull");
+        perro1.hacerSonido();
+        perro1.comer();
+        perro1.dormir();
+        
+        Perro perro2 = new Perro("Mamifero", "Pincher");
+        System.out.println("La especie de perro2 es: " + perro2.getEspecie());
+
+        Gato gato1 = new Gato();
+        gato1.setEspecie("Mamifero");
+        gato1.setRaza("Syverian");
+        gato1.hacerSonido();
+        gato1.comer();
+        gato1.dormir();
+        
+        Pajaro pajaro1 = new Pajaro();
+        pajaro1.setEspecie("Loro");
+        pajaro1.setRaza("Guacamaya");
+        pajaro1.hacerSonido();
+        pajaro1.comer();
+        pajaro1.dormir();
+        
+    }
+        
+    }
+    
