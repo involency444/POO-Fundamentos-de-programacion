@@ -1,0 +1,35 @@
+package animal;
+
+class Pajaro extends Animal{
+    private String raza;
+    private String color;
+
+        public Pajaro() {
+        }
+
+        public Pajaro(String raza, String especie) {
+            super(especie);
+            this.raza = raza;
+            this.color = color;
+            
+        }
+        public String getRaza() {
+            return raza;
+        }
+
+        public void setRaza(String raza) {
+            this.raza = raza;
+        }
+        public void hacerSonido(){
+        System.out.println("El pajaro hace piw piw ");
+        }
+        public void Volar(){
+        System.out.println("El pajaro vuela");
+        }
+    public void Cantar(){
+        System.out.println("El pajaro canta");
+        }
+    public void Dormir(){
+        System.out.println("El pajaro duerme todo el tiempo ");
+        }
+    }
