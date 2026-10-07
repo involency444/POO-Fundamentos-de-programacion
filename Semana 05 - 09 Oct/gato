@@ -1,0 +1,46 @@
+package animal;
+
+
+class Gato extends Animal{
+    private String raza;
+    private String color;
+
+        public Gato() {
+        }
+
+        public Gato(String raza, String especie) {
+            super(especie);
+            this.raza = raza;
+            this.color = color;
+            
+        }
+        public String getRaza() {
+            return raza;
+        }
+
+        public void setRaza(String raza) {
+            this.raza = raza;
+        }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+        
+    public void hacerSonido(){
+        System.out.println("El gato hace meow: ");
+        }
+    public void Jugar(){
+        System.out.println("El gato juega: ");
+        }
+    public void Color(){
+        System.out.println("El color del gato es: " + this.color);
+        }
+    public void Dormir(){
+        System.out.println("El gato duerme: ");
+        }
+    }
+    
