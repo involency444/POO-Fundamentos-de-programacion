@@ -1,0 +1,29 @@
+package animal;
+
+
+    
+    class Perro extends Animal{
+    private String raza;
+
+        public Perro() {
+        }
+
+        public Perro(String raza, String especie) {
+            super(especie);
+            this.raza = raza;
+        }
+        public String getRaza() {
+            return raza;
+        }
+
+        public void setRaza(String raza) {
+            this.raza = raza;
+        }
+    public void hacerSonido(){
+        System.out.println("El perro hace woof: ");
+       }
+    public void Jugar(){
+        System.out.println("El perro juega: ");
+        }
+    }
+    
